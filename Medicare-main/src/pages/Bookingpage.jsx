@@ -95,15 +95,15 @@ const Bookingpage = () => {
   }, []);
   return (
     <Layout>
-      <h3 className="text-center">Booking Page</h3>
-      <div className="container">
+      <h3 className="text-center text-purple-600 text-[30px] m-4">Booking Page</h3>
+      <div className="p-4">
         {doctors && (
-          <div>
-            <h4>
+          <div className="border-2 p-2 rounded-lg bg-gradient-to-r from-cyan-600 to-purple-600">
+            <h4 className="text-[26px] text-white  inline capitalize ">
               Dr. {doctors.firstName} {doctors.lastName}
             </h4>
-            <h4> Fees : {doctors.feesPerCunsaltation}</h4>
-            <h4>{/* Fees : {doctors.timings[0]} - {doctors.timings[1]} */}</h4>
+            <h4 className="text-[20px] mt-2 text-white capitalize"> Fees : {doctors.feesPerCunsaltation}</h4>
+            <h4></h4>
             <div className="d-flex flex-column">
               <DatePicker
                 className="m-2"
@@ -121,16 +121,19 @@ const Bookingpage = () => {
                   setTime(moment(value).format("HH:mm"));
                 }}
               />
+             
+                
               <button
-                className="btn btn-primary mt-2"
+                className="btn m-2 shadow-inner show-white border border-white"
                 onClick={handleAvailability}
               >
                 Check Availability
               </button>
               {!isAvailibale && (
-                <button className="btn btn-dark mt-2" onClick={handleBooking}>
+                <button className="btn btn-dark m-2 shadow-inner show-white border border-white" onClick={handleBooking}>
                   Book Now
                 </button>
+
               )}
             </div>
           </div>

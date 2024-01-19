@@ -8,7 +8,7 @@ const FaqItem = ({item}) => {
         setIsOpen(!isOpen);
     }
   return (
-    <div className='p-3 lg:p-3 rounded-none border-b-2 border-solid h-[70px]
+    <div className='p-3 lg:p-3 rounded-none border-b-2 border-solid 
     border-purple-500 mb-2 cursor-pointer'>
         <div className='flex items-center justify-between gap-5' onClick={toggleAccordion}>
             <h4 className='text-[16px] leading-7 lg:text-[16px] lg:leading-8 

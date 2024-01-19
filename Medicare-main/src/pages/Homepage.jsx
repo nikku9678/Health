@@ -28,15 +28,18 @@ const Homepage = () => {
     getUserData();
   }, []);
   return (
-    <div>
-      <Layout>
-        <h1 className="text-center">Home Page</h1>
-        <Row>
-          {
+    <div >
+      <Layout className="border-2">
+        <h1 className="text-center text-[30px] text-purple-600 mb-10">Home Page</h1>
+        <Row className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+    gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px] '>
+     
+    {
             doctors && doctors.map(doctor => (
-              <DoctorList doctor={doctor}/>
+              <DoctorList doctor={doctor} />
             ))
           }
+          
         </Row>
       </Layout>
     </div>
