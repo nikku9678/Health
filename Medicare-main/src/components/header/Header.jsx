@@ -19,10 +19,11 @@ const navlinks=[
     display:'Services'
   },
   {
-    path:'/contact6',
+    path:'/contact',
     display:'Contact'
   },
 ]
+
 
 const Header = () => {
   const [show,setShow]=useState(true);
@@ -56,7 +57,7 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* {menu} */}
+          {/* {menu}   yaha hai*/}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu flex items-center gap-[2.5rem]">
               {
