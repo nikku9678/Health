@@ -45,14 +45,14 @@ const Layout = ({ children }) => {
     : userMenu;
   return (
     <>
-      <div className="main">
-        <div className="layout">
-          <div className="sidebar">
-            <div className="logo">
+      <div className="main mb-[10px] p-4">
+        <div className="layout h-full  p-1">
+          <div className="sidebar shadow-lg shadow-purple-300 bg-purple-600  border  h-full ">
+            <div className="logo border">
               <h3>DOC APP</h3>
               <hr />
             </div>
-            <div className="menu">
+            <div className="menu mt-4 mb-10 p-1 font-[600]">
               {SidebarMenu.map((menu) => {
                 const isActive = location.pathname === menu.path;
                 return (
@@ -70,8 +70,9 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
-          <div className="content">
-            <div className="header">
+
+          <div className="content mb-10 h-full">
+            <div className="header border-4 border-purple-600 rounded-lg shadow-md">
               <div className="header-content" style={{ cursor: "pointer" }}>
                 {/* count={user && user.notification?.length} */}
                 <Badge
@@ -82,10 +83,10 @@ const Layout = ({ children }) => {
                 >
                   <i class="fa-solid fa-bell" />
                 </Badge>
-                <Link to="/profile">{user?.name}</Link>
+                <Link to="/profile" className="text-purple-600">{user?.name}</Link>
               </div>
             </div>
-            <div className="body">{children}</div>
+            <div className="body  border-4 border-purple-600 rounded-lg shadow-md h-full">{children}</div>
           </div>
         </div>
       </div>

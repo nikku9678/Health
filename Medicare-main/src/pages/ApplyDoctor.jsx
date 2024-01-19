@@ -45,9 +45,10 @@ const ApplyDoctor = () => {
   };
   return (
     <Layout>
-      <h1 className="text-center">Apply Doctor</h1>
+      <h1 className="text-center text-[30px] m-4 text-purple-600">Apply Doctor</h1>
+      <div className="h-full border">
       <Form layout="vertical" onFinish={handleFinish} className="m-3">
-        <h6>Personal Details</h6>
+        <h6 className="text-[16px] m-4 text-purple-600">Personal Details</h6>
         <Row gutter={20}>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
@@ -111,7 +112,7 @@ const ApplyDoctor = () => {
             </Form.Item>
           </Col>
         </Row>
-        <h6>Professional Details</h6>
+        <h6 className="text-[16px] m-4 text-purple-600">Professional Details</h6>
         <Row gutter={20}>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
@@ -162,6 +163,8 @@ const ApplyDoctor = () => {
           </Col>
         </Row>
       </Form>
+      </div>
+      
     </Layout>
   );
 };

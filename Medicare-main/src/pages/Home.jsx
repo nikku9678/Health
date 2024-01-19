@@ -25,7 +25,7 @@ const Home = () => {
   return <>
   {/* Hero Section */}
   <>
-  <section className='hero_section pt-[50px] 2xl:h-[800px] bg-gradient-to-br from-purple-600 from-10% via-white via-800%'>
+  <section className='hero_section pt-[50px] 2xl:h-[800px] bg-gradient-to-br from-purple-700 from-30% via-purple-500 via-40% to-purple-700 to-70%'>
     <div className='container'>
 
       <div className='flex flex-col lg:flex-row gap-[30px]  lg:gap-[0px] h-full 
@@ -44,10 +44,10 @@ const Home = () => {
             md:text-[40px]
             md:leading-[55px] text-white shadow'>Seamless Online Doctor Visits at Your Fingertips . . .</span>
             
-            <p className='text_para text-black-500 font-[400]'>
+            <p className='text_para text-black-500 font-[400] text-white'>
             "Seamless Care, Anywhere: Your Virtual Hub for Health and Wellness."
             </p>
-            <button className=' btn '>
+            <button className=' btn shadow-inner shadow-white bg-yellow-400 text-purple-700'>
               Request an Appointment
             </button>
           </div>
@@ -59,21 +59,21 @@ const Home = () => {
             <div>
               <h2 className=' w-[60px] h-[60px] text-[36px] leading-[56px] lg:text-[36px] md:text-[20px] p-3 shadow-inner shadow-gray-100 text-center
               lg:leading-[54px] font-[700] 
-              rounded-full bg-yellow-400 text-white hover:bg-purple-500'><MdMarkUnreadChatAlt/></h2>
+              rounded-full bg-yellow-400 text-purple-700 hover:bg-purple-500'><MdMarkUnreadChatAlt/></h2>
              
             </div>
 
             <div>
               <h2 className=' w-[60px] h-[60px] text-[36px] leading-[56px] lg:text-[30px] md:text-[20px] p-3 shadow-inner shadow-gray-100 text-center
               lg:leading-[54px] font-[700] 
-              rounded-full bg-yellow-400 text-white hover:bg-purple-500'><FaPhoneAlt/></h2>  
+              rounded-full bg-yellow-400 text-purple-700 hover:bg-purple-500'><FaPhoneAlt/></h2>  
              
             </div>
 
             <div>
               <h2 className=' w-[60px] h-[60px] text-[36px] leading-[56px] lg:text-[36px] md:text-[20px] p-3 shadow-inner shadow-gray-100 text-center
               lg:leading-[54px] font-[700] 
-              rounded-full bg-yellow-400 text-white hover:bg-purple-500'><BiSolidDonateHeart/></h2>   
+              rounded-full bg-yellow-400 text-purple-700 hover:bg-purple-500'><BiSolidDonateHeart/></h2>   
               
             </div>
           </div>

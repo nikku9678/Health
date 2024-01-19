@@ -1,10 +1,11 @@
 .main{
     padding: 10px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .layout{
     display: flex;
+    /* margin-bottom: ; */
 }
 
 .sidebar{
