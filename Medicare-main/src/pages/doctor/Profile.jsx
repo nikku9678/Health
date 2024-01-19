@@ -70,7 +70,7 @@ const Profile = () => {
   }, []);
   return (
     <Layout>
-      <h1>Manage Profile</h1>
+      <h1 className="text-purple-600 text-[30px] text-center m-4">Manage Profile</h1>
       {doctor && (
         <Form
           layout="vertical"
@@ -86,7 +86,7 @@ const Profile = () => {
             }
           }
         >
-          <h6>Personal Details</h6>
+          <h6 className="text-purple-600 text-[20px] text-start">Personal Details</h6>
           <Row gutter={20}>
             <Col xs={24} md={24} lg={8}>
               <Form.Item
@@ -150,7 +150,7 @@ const Profile = () => {
               </Form.Item>
             </Col>
           </Row>
-          <h6>Professional Details</h6>
+          <h6 className="text-purple-600 text-[20px] text-start">Professional Details</h6>
           <Row gutter={20}>
             <Col xs={24} md={24} lg={8}>
               <Form.Item
