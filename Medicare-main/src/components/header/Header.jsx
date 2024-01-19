@@ -19,7 +19,7 @@ const navlinks=[
     display:'Services'
   },
   {
-    path:'/contact',
+    path:'/contact6',
     display:'Contact'
   },
 ]
