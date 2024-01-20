@@ -18,6 +18,7 @@ import Doctors from "../pages/admin/Doctors";
 import Users from "../pages/admin/Users";
 import Profile from "../pages/doctor/Profile";
 import { Route,Routes } from "react-router-dom";
+import UserProfile from '../pages/doctor/UserProfile';
 function RouteApp() {
   return (
     <div>
@@ -68,6 +69,14 @@ function RouteApp() {
               element={
                 <ProtectedRoutes>
                   <Profile />
+                </ProtectedRoutes>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <ProtectedRoutes>
+                  <UserProfile />
                 </ProtectedRoutes>
               }
             />

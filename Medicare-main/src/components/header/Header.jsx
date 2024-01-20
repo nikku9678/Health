@@ -4,7 +4,7 @@ import {NavLink,Link} from 'react-router-dom'
 import userImg from '../../assets/images/avatar-icon.png'
 import {BiMenu} from "react-icons/bi"
 // import { authContext } from '../../context/authContext'
-
+import './Header.css'
 const navlinks=[
   {
     path:'/home',
@@ -46,6 +46,7 @@ const Header = () => {
   const toggleMenu=()=>{
     menuRef.current.classList.toggle('show_menu');
   }
+  
   return (
     <header className='header flex items-center bg-white border-b-4  rounded-lg rounded-b border-purple-500 shadow-lg  opacity-[0.9]' ref={headerRef} >
       <div className="container">
@@ -57,7 +58,7 @@ const Header = () => {
           </div>
 
           {/* {menu} */}
-          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+          <div id='nav-head' className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu flex items-center gap-[2.5rem]">
               {
                 navlinks.map((link,index)=><li>
@@ -79,8 +80,8 @@ const Header = () => {
                 </figure>
               </Link>
             </div>
-            <Link to='/login'>
-              <button className='bg-purple-500 py-2 px-8 text-white font-[600] hover:bg-purple-600 transition-all
+            <Link to='/login' >
+              <button id='btn'  className='bg-purple-500 py-2 px-8 text-white font-[600] hover:bg-purple-600 transition-all
               h-[40px] flex items-center justify-center rounded-lg'  >
                 Login</button>
             </Link>

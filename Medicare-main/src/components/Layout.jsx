@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   const { user } = useSelector((state) => state.user);
   const location = useLocation();
   const navigate = useNavigate();
-
+ 
   // logout function
   const handleLogout = () => {
     localStorage.clear();

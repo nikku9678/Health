@@ -21,7 +21,12 @@ import DoctorList from '../components/Doctors/DoctorList'
 import faqImg from '../assets/images/doctor_consultation_03.jpg'
 import FaqList from '../components/faq/FaqList'
 import Testimonial from '../components/Testimonial/Testimonial'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  const navigate =useNavigate();
+  const handleNavigate=()=>{
+    navigate('/login');
+  }
   return <>
   {/* Hero Section */}
   <>
@@ -47,7 +52,7 @@ const Home = () => {
             <p className='text_para text-black-500 font-[400]'>
             "Seamless Care, Anywhere: Your Virtual Hub for Health and Wellness."
             </p>
-            <button className=' btn '>
+            <button className=' btn ' onClick={handleNavigate}>
               Request an Appointment
             </button>
           </div>
@@ -150,7 +155,7 @@ const Home = () => {
             </h2>
             <p className='text-[15px] leading-7 text-textColor font-[400] mt-4 text-justify'>Book Your Spot on the Path to Wellness! Schedule an Appointment: Your Quick Link to Expert Care. Swift, Simple, and All About Your Health!
             </p>
-            <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid
+            <Link to='/login' className='w-[44px] h-[44px] rounded-full border border-solid
             border-[#181A1E] mx-auto flex mt-1 items-center justify-center group hover:
             hover:bg-purple-500 hover:border-none'>
               <BsArrowRight className='group-hover:text-white w-6 h-5'/>
